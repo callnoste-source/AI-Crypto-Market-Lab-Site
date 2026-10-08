@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI Crypto Market Lab — prywatny projekt badawczy jakości danych rynkowych i testowania strategii, bez obsługi rzeczywistych transakcji.">
+  <meta name="color-scheme" content="dark light">
+  <title>AI Crypto Market Lab — projekt badawczy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Przejdź do treści</a>
+  <header class="bar">
+    <div class="wrap bar-inner">
+      <a class="wordmark" href="./" aria-label="AI Crypto Market Lab — strona główna">
+        <span class="mark" aria-hidden="true">◇</span>
+        <span>AI <strong>Crypto Market Lab</strong></span>
+      </a>
+      <nav aria-label="Nawigacja główna">
+        <a class="current" aria-current="page" href="./">O projekcie</a>
+        <a href="privacy.html">Prywatność</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap">
+      <p class="eyebrow"><span class="dot"></span> PRYWATNY PROJEKT BADAWCZY · RESEARCH ONLY</p>
+      <h1>Badania rynku krypto.<br><span>Najpierw dane, potem wnioski.</span></h1>
+      <p class="lead">AI Crypto Market Lab to narzędzie do badania historycznych danych kryptowalutowych, kontroli ich jakości oraz testowania hipotez dotyczących strategii LONG / SHORT / NO TRADE.</p>
+      <div class="tags" aria-label="Główne założenia">
+        <span>Weryfikowalne dane</span><span>Powtarzalne testy</span><span>Kontrola ryzyka</span>
+      </div>
+      <div class="notice">
+        <strong>Bez realnego tradingu.</strong> Projekt nie składa zleceń, nie obsługuje rzeczywistych środków i nie gwarantuje zysków. Nie jest usługą inwestycyjną ani doradztwem finansowym.
+      </div>
+    </section>
+
+    <section class="wrap section" aria-labelledby="how">
+      <div class="section-heading">
+        <span class="kicker">METODOLOGIA</span>
+        <h2 id="how">Co badamy?</h2>
+        <p>Podstawą systemu jest deterministyczna analiza danych i możliwość niezależnego odtworzenia wyniku.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="num">01</span>
+          <h3>Jakość danych</h3>
+          <p>Sprawdzamy ciągłość świec OHLCV, powtórzenia, znaczniki czasu, wolumen oraz zgodność różnych interwałów.</p>
+        </article>
+        <article class="card">
+          <span class="num">02</span>
+          <h3>Walidacja strategii</h3>
+          <p>Projektujemy backtesty i testy out-of-sample z uwzględnieniem prowizji, poślizgu cenowego i ograniczeń symulacji.</p>
+        </article>
+        <article class="card">
+          <span class="num">03</span>
+          <h3>Bezpieczeństwo</h3>
+          <p>Odróżniamy sygnały badawcze od wykonywania transakcji. Wynik testu nie jest obietnicą przyszłej skuteczności.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap section" aria-labelledby="drive">
+      <div class="panel">
+        <div>
+          <span class="kicker">INTEGRACJA W PRZYGOTOWANIU</span>
+          <h2 id="drive">Prywatne archiwum Google Drive</h2>
+          <p>Planowana integracja wykorzystuje Google Drive API i zgodę OAuth, aby zapisywać oraz odczytywać pliki archiwum danych rynkowych właściciela projektu. Docelowy zakres <code>drive.file</code> ogranicza aplikację do plików, które tworzy lub do których użytkownik świadomie udziela jej dostępu.</p>
+          <p>Strona internetowa ma charakter informacyjny. Nie służy do logowania do Google ani do zbierania tokenów.</p>
+          <a class="inline-link" href="privacy.html">Jak przetwarzane są dane i uprawnienia <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="panel-graphic" aria-hidden="true">
+          <div class="graphic-top">KRAKEN · OHLCV</div>
+          <div class="graphic-arrow">↓</div>
+          <div class="graphic-mid">QUALITY AUDIT</div>
+          <div class="graphic-arrow">↓</div>
+          <div class="graphic-bottom">PRIVATE DRIVE ARCHIVE</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© 2026 AI Crypto Market Lab · Projekt badawczy</span>
+      <div><a href="privacy.html">Polityka prywatności</a><a href="https://github.com/callnoste-source/AI-Crypto-Market-Lab-Site/issues" rel="noopener noreferrer">Kontakt przez GitHub Issues</a></div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Polityka prywatności AI Crypto Market Lab — strona informacyjna oraz planowana integracja z Google Drive API.">
+  <meta name="color-scheme" content="dark light">
+  <title>Polityka prywatności — AI Crypto Market Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Przejdź do treści</a>
+  <header class="bar">
+    <div class="wrap bar-inner">
+      <a class="wordmark" href="./" aria-label="AI Crypto Market Lab — strona główna">
+        <span class="mark" aria-hidden="true">◇</span>
+        <span>AI <strong>Crypto Market Lab</strong></span>
+      </a>
+      <nav aria-label="Nawigacja główna">
+        <a href="./">O projekcie</a>
+        <a class="current" aria-current="page" href="privacy.html">Prywatność</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap article">
+    <p class="eyebrow"><span class="dot"></span> PRZEJRZYSTOŚĆ DANYCH</p>
+    <h1>Polityka <span>prywatności</span></h1>
+    <p class="lead">Dotyczy publicznej strony informacyjnej AI Crypto Market Lab i planowanej integracji z Google Drive API.</p>
+    <p class="updated">Wersja z dnia: 8 października 2026 r. · Integracja z Dyskiem Google jest w przygotowaniu, a nie uruchomiona produkcyjnie.</p>
+
+    <div class="prose">
+      <section aria-labelledby="who">
+        <h2 id="who">1. Charakter projektu i kontakt</h2>
+        <p>AI Crypto Market Lab jest prywatnym, niekomercyjnym projektem badawczym, rozwijanym przez właściciela repozytorium GitHub <a href="https://github.com/callnoste-source" rel="noopener noreferrer">callnoste-source</a>. Projekt służy do zbierania i kontroli danych rynkowych oraz badania hipotez strategii. Nie obsługuje rzeczywistych transakcji ani środków klientów.</p>
+        <p>Kontakt dotyczący witryny i prywatności: <a href="https://github.com/callnoste-source/AI-Crypto-Market-Lab-Site/issues" rel="noopener noreferrer">publiczny system zgłoszeń GitHub Issues</a>. Nie umieszczaj tam haseł, danych osobowych ani tokenów. Jeżeli sprawa jest poufna, nie publikuj jej publicznie.</p>
+      </section>
+      <section aria-labelledby="site">
+        <h2 id="site">2. Dane na publicznej stronie</h2>
+        <p>Ta statyczna witryna nie ma formularzy rejestracyjnych, własnego systemu analityki, własnych cookies ani mechanizmu logowania. Sam operator strony nie prowadzi tutaj odrębnej bazy użytkowników i nie prosi o podanie danych Google.</p>
+        <p>Witryna będzie udostępniana przez GitHub Pages. GitHub może przetwarzać techniczne informacje o odwiedzinach (np. adres IP, żądania HTTP) zgodnie ze swoimi zasadami. Zapoznaj się z <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">zasadami prywatności GitHub</a>. Zewnętrzne odnośniki prowadzą do usług objętych własnymi zasadami prywatności.</p>
+      </section>
+      <section aria-labelledby="google">
+        <h2 id="google">3. Planowany dostęp do Google Drive</h2>
+        <p>Jeśli właściciel projektu dobrowolnie połączy swój Dysk Google z narzędziem archiwizacji, aplikacja będzie żądała dostępu poprzez standardowy ekran zgody OAuth i zakres <code>https://www.googleapis.com/auth/drive.file</code>.</p>
+        <p>Przeznaczenie dostępu: utworzenie katalogu archiwum aplikacji, przesyłanie do niego pobranych danych OHLCV, raportów jakości oraz manifestów integralności, sprawdzanie i ponowne pobieranie plików archiwalnych, a także zarządzanie <strong>wyłącznie plikami udostępnionymi aplikacji albo utworzonymi przez nią</strong>. Uprawnienie technicznie może pozwalać również na usunięcie takich plików, lecz automatyczny system archiwizacji będzie projektowany tak, aby nie usuwać ich bez uzasadnionej potrzeby.</p>
+        <p>Nie jest planowane wyszukiwanie ani odczytywanie pozostałej zawartości prywatnego Dysku, kontaktów, poczty Gmail lub plików niezwiązanych z archiwum. Dostęp do Dysku wymaga świadomej zgody; nie jest nadawany samym odwiedzeniem tej strony.</p>
+      </section>
+      <section aria-labelledby="storage">
+        <h2 id="storage">4. Przechowywanie, udostępnianie i bezpieczeństwo</h2>
+        <p>Pliki rynkowe i raporty mają pozostawać w prywatnym Dysku Google właściciela projektu. Kod i testy projektu przechowujemy oddzielnie w GitHub. Docelowa automatyzacja może przetwarzać pliki przez tymczasowe środowiska GitHub Actions; do repozytoriów publicznych nie wolno dodawać archiwów prywatnych ani tokenów.</p>
+        <p>Dane autoryzacyjne OAuth i odświeżania dostępu będą przechowywane w chronionych ustawieniach odpowiedniego środowiska, a nie w treści strony lub publicznym repozytorium. Konfiguracja musi zostać sprawdzona przed uruchomieniem. Dostępu Google nie sprzedajemy, nie wykorzystujemy do reklamy, nie przekazujemy pośrednikom reklamowym ani nie używamy do trenowania modeli AI.</p>
+        <p>Dane nie będą publicznie udostępniane z poziomu naszej aplikacji. Przetwarzanie przez Google i GitHub podlega warunkom ich usług. Nie planuje się przechowywania osobnej kopii plików Google na zewnętrznym komercyjnym serwerze.</p>
+      </section>
+      <section aria-labelledby="retention">
+        <h2 id="retention">5. Przechowywanie i usuwanie</h2>
+        <p>Archiwa rynkowe przechowujemy do czasu usunięcia ich przez właściciela projektu. Tymczasowe artefakty GitHub Actions wygasają zgodnie z ustawioną retencją. Właściciel może skasować archiwa na Dysku Google, usunąć konfigurację autoryzacji lub wycofać zgodę na dostęp aplikacji na <a href="https://myaccount.google.com/connections" rel="noopener noreferrer">stronie połączeń konta Google</a>. Wycofanie zgody blokuje przyszłe korzystanie z API, ale samo w sobie nie oznacza automatycznego usunięcia archiwów.</p>
+        <p>Jeżeli w przyszłości aplikacja będzie udostępniona innym użytkownikom, polityka zostanie dostosowana przed rozpoczęciem takiego przetwarzania danych.</p>
+      </section>
+      <section aria-labelledby="limit">
+        <h2 id="limit">6. Ograniczenia i aktualizacje</h2>
+        <p>Opis integracji Google Drive przedstawia planowaną funkcjonalność; obecnie strona nie pozwala przyznać dostępu OAuth i nie przetwarza danych Drive. Polityka zostanie zaktualizowana, gdy produkcyjny proces archiwizacji zostanie wdrożony lub zmieni się zakres danych. Ostatnia aktualizacja jest wskazana powyżej.</p>
+      </section>
+    </div>
+    <p class="bottom-link"><a class="inline-link" href="./">← Wróć do strony głównej</a></p>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© 2026 AI Crypto Market Lab · Projekt badawczy</span>
+      <div><a href="./">O projekcie</a><a href="privacy.html">Polityka prywatności</a></div>
+    </div>
+  </footer>
+</body>
+</html>
